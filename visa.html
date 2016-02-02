@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>签证 - 游大大旅游网</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/visa.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery-jvectormap-2.0.3.css"/>
+    <script type="text/javascript" src="script/jquery.1.9.1.js"></script>
+    <script type="text/javascript" src="script/visa.js"></script>
+    <script type="text/javascript" src="script/jquery-jvectormap-2.0.3.min.js"></script>
+    <script type="text/javascript" src="script/visamap.js"></script>
+</head>
+<body>
+<!--签证-->
+    <div id="visa">
+        <div class="visa_cocntent clearfix">
+            <!--签证 左侧-->
+            <div id="visa_left" class="fl">
+                <!--导航-->
+                <div class="navTabs">
+                    <p class="navTabs_tit clearfix">
+                        <a href="javascript:;" class="titCur">旅游签</a>
+                        <a href="javascript:;">商务签</a>
+                        <a href="javascript:;">探亲签</a>
+                    </p>
+                    <div class="navContents navOn">
+                        <ul>
+                            <li>
+                                <h3>亚洲</h3>
+                                <div class="tabs tabsAsia clearfix">
+                                    <a href="javascript:;">印度</a>
+                                    <a href="javascript:;">日本</a>
+                                    <a href="javascript:;">老挝</a>
+                                    <a href="javascript:;">缅甸</a>
+                                    <a href="javascript:;">韩国</a>
+                                    <a href="javascript:;">泰国</a>
+                                    <a href="javascript:;">菲律宾</a>
+                                    <a href="javascript:;">斯里兰卡</a>
+                                    <a href="javascript:;">马来西亚</a>
+                                    <a href="javascript:;">新加坡</a>
+                                    <a href="javascript:;">尼泊尔</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore">更多</a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>欧洲</h3>
+                                <div class="tabs clearfix">
+                                    <a href="javascript:;">瑞典</a>
+                                    <a href="javascript:;">瑞士</a>
+                                    <a href="javascript:;">匈牙利</a>
+                                    <a href="javascript:;">爱尔兰</a>
+                                    <a href="javascript:;">奥地利</a>
+                                    <a href="javascript:;">德国</a>
+                                    <a href="javascript:;">法国</a>
+                                    <a href="javascript:;">荷兰</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore">更多</a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>美洲</h3>
+                                <div class="tabs clearfix">
+                                    <a href="javascript:;">加拿大</a>
+                                    <a href="javascript:;">美国</a>
+                                    <a href="javascript:;">墨西哥</a>
+                                    <a href="javascript:;">阿根廷</a>
+                                    <a href="javascript:;">哥伦比亚</a>
+                                    <a href="javascript:;">巴西</a>
+                                    <a href="javascript:;">古巴</a>
+                                    <a href="javascript:;">海地</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore">更多</a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>非洲</h3>
+                                <div class="tabs clearfix">
+                                    <a href="javascript:;">南非</a>
+                                    <a href="javascript:;">埃及</a>
+                                    <a href="javascript:;">肯尼亚</a>
+                                    <a href="javascript:;">赞比亚</a>
+                                    <a href="javascript:;">马达加斯加</a>
+                                    <a href="javascript:;">纳米比亚</a>
+                                    <a href="javascript:;">喀麦隆</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore mr0">更多</a>
+                                </div>
+                            </li>
+                            <li class="btNone">
+                                <h3>大洋洲</h3>
+                                <div class="clearfix">
+                                    <a href="javascript:;">澳大利亚</a>
+                                    <a href="javascript:;">新西兰</a>
+                                    <a href="javascript:;">斐济</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navContents">
+                        <ul>
+                            <li>
+                                <h3>亚洲</h3>
+                                <div class="tabs tabsAsia clearfix">
+                                    <a href="javascript:;">印度</a>
+                                    <a href="javascript:;">日本</a>
+                                    <a href="javascript:;">老挝</a>
+                                    <a href="javascript:;">缅甸</a>
+                                    <a href="javascript:;">韩国</a>
+                                    <a href="javascript:;">泰国</a>
+                                    <a href="javascript:;">菲律宾</a>
+                                    <a href="javascript:;">斯里兰卡</a>
+                                    <a href="javascript:;">马来西亚</a>
+                                    <a href="javascript:;">新加坡</a>
+                                    <a href="javascript:;">尼泊尔</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore">更多</a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>欧洲</h3>
+                                <div class="tabs clearfix">
+                                    <a href="javascript:;">瑞典</a>
+                                    <a href="javascript:;">瑞士</a>
+                                    <a href="javascript:;">匈牙利</a>
+                                    <a href="javascript:;">爱尔兰</a>
+                                    <a href="javascript:;">奥地利</a>
+                                    <a href="javascript:;">德国</a>
+                                    <a href="javascript:;">法国</a>
+                                    <a href="javascript:;">荷兰</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore">更多</a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>美洲</h3>
+                                <div class="tabs clearfix">
+                                    <a href="javascript:;">加拿大</a>
+                                    <a href="javascript:;">美国</a>
+                                    <a href="javascript:;">墨西哥</a>
+                                    <a href="javascript:;">阿根廷</a>
+                                    <a href="javascript:;">哥伦比亚</a>
+                                    <a href="javascript:;">巴西</a>
+                                    <a href="javascript:;">古巴</a>
+                                    <a href="javascript:;">海地</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore">更多</a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>非洲</h3>
+                                <div class="tabs clearfix">
+                                    <a href="javascript:;">南非</a>
+                                    <a href="javascript:;">埃及</a>
+                                    <a href="javascript:;">肯尼亚</a>
+                                    <a href="javascript:;">赞比亚</a>
+                                    <a href="javascript:;">马达加斯加</a>
+                                    <a href="javascript:;">纳米比亚</a>
+                                    <a href="javascript:;">喀麦隆</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore mr0">更多</a>
+                                </div>
+                            </li>
+                            <li class="btNone">
+                                <h3>大洋洲</h3>
+                                <div class="clearfix">
+                                    <a href="javascript:;">澳大利亚</a>
+                                    <a href="javascript:;">新西兰</a>
+                                    <a href="javascript:;">斐济</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navContents">
+                        <ul>
+                            <li>
+                                <h3>亚洲</h3>
+                                <div class="tabs tabsAsia clearfix">
+                                    <a href="javascript:;">印度</a>
+                                    <a href="javascript:;">日本</a>
+                                    <a href="javascript:;">老挝</a>
+                                    <a href="javascript:;">缅甸</a>
+                                    <a href="javascript:;">韩国</a>
+                                    <a href="javascript:;">泰国</a>
+                                    <a href="javascript:;">菲律宾</a>
+                                    <a href="javascript:;">斯里兰卡</a>
+                                    <a href="javascript:;">马来西亚</a>
+                                    <a href="javascript:;">新加坡</a>
+                                    <a href="javascript:;">尼泊尔</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore">更多</a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>欧洲</h3>
+                                <div class="tabs clearfix">
+                                    <a href="javascript:;">瑞典</a>
+                                    <a href="javascript:;">瑞士</a>
+                                    <a href="javascript:;">匈牙利</a>
+                                    <a href="javascript:;">爱尔兰</a>
+                                    <a href="javascript:;">奥地利</a>
+                                    <a href="javascript:;">德国</a>
+                                    <a href="javascript:;">法国</a>
+                                    <a href="javascript:;">荷兰</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore">更多</a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>美洲</h3>
+                                <div class="tabs clearfix">
+                                    <a href="javascript:;">加拿大</a>
+                                    <a href="javascript:;">美国</a>
+                                    <a href="javascript:;">墨西哥</a>
+                                    <a href="javascript:;">阿根廷</a>
+                                    <a href="javascript:;">哥伦比亚</a>
+                                    <a href="javascript:;">巴西</a>
+                                    <a href="javascript:;">古巴</a>
+                                    <a href="javascript:;">海地</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore">更多</a>
+                                </div>
+                            </li>
+                            <li>
+                                <h3>非洲</h3>
+                                <div class="tabs clearfix">
+                                    <a href="javascript:;">南非</a>
+                                    <a href="javascript:;">埃及</a>
+                                    <a href="javascript:;">肯尼亚</a>
+                                    <a href="javascript:;">赞比亚</a>
+                                    <a href="javascript:;">马达加斯加</a>
+                                    <a href="javascript:;">纳米比亚</a>
+                                    <a href="javascript:;">喀麦隆</a>
+                                    <span class="clearfix">
+                                        <a href="javascript:;">印度</a>
+                                        <a href="javascript:;">日本</a>
+                                        <a href="javascript:;">老挝</a>
+                                        <a href="javascript:;">缅甸</a>
+                                        <a href="javascript:;">韩国</a>
+                                        <a href="javascript:;">泰国</a>
+                                        <a href="javascript:;">菲律宾</a>
+                                        <a href="javascript:;">斯里兰卡</a>
+                                    </span>
+                                    <a href="javascript:;"  class="navMore mr0">更多</a>
+                                </div>
+                            </li>
+                            <li class="btNone">
+                                <h3>大洋洲</h3>
+                                <div class="clearfix">
+                                    <a href="javascript:;">澳大利亚</a>
+                                    <a href="javascript:;">新西兰</a>
+                                    <a href="javascript:;">斐济</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--出签率-->
+                <div class="visaRate">
+                    <h3>出签率 <span>99.8%</span></h3>
+                    <p class="visaRateBg"></p>
+                </div>
+                <!--签证进度查询-->
+                <div class="schedule">
+                    <form id="visaSelect" action="" method="">
+                        <h2>签证进度查询</h2>
+                        <ul>
+                            <li>
+                                <label for="SelectNum">订单号：</label>
+                                <input id="SelectNum" type="text"/>
+                            </li>
+                            <li>
+                                <label for="SelectPhone">手机号：</label>
+                                <input id="SelectPhone" type="text"/>
+                            </li>
+                            <li>
+                                <label for="SelectVerificationCode">验证码：</label>
+                                <input id="SelectVerificationCode" type="text"/>
+                                <span class="imgUpdate clearfix"><img class="icoUpdate fl" src="http://www.uddtrip.com/member/generate" /><a class="aUpdate fl" href="javascript:;"></a></span>
+                            </li>
+                            <li class="scheduleSubmit">
+                                <input type="submit" value="" class="fl" /> <a href="javascript:;">忘记订单号？</a>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <!--最新出签-->
+                <div class="newVisa">
+                    <h2>最新出签</h2>
+                    <p><span>12天</span>法国单次个人旅游签证</p>
+                    <p><span>23天</span>澳洲往返多次旅游签证</p>
+                    <p><span>12天</span>法国单次个人旅游签证</p>
+                    <p><span>12天</span>法国单次个人旅游签证</p>
+                    <p><span>12天</span>法国单次个人旅游签证</p>
+                </div>
+                <!--签证热销排行-->
+                <div class="visa_top9">
+                    <h2>签证热销排行</h2>
+                    <div class="visaTopList">
+                        <p class="visaTop1"><span>1</span><a href="javascript:;">日本单次个人旅游签证&lt;上海送签&gt;游签证</a></p>
+                        <p class="visaTop2"><span>2</span><a href="javascript:;">日本单次个人旅游签证&lt;上海送签&gt;游签证</a></p>
+                        <p class="visaTop3"><span>3</span><a href="javascript:;">日本单次个人旅游签证&lt;上海送签&gt;游签证</a></p>
+                        <p><span>4</span><a href="javascript:;">日本单次个人旅游签证&lt;上海送签&gt;游签证</a></p>
+                        <p><span>5</span><a href="javascript:;">日本单次个人旅游签证&lt;上海送签&gt;游签证</a></p>
+                        <p><span>6</span><a href="javascript:;">日本单次个人旅游签证&lt;上海送签&gt;游签证</a></p>
+                        <p><span>7</span><a href="javascript:;">日本单次个人旅游签证&lt;上海送签&gt;游签证</a></p>
+                        <p><span>8</span><a href="javascript:;">日本单次个人旅游签证&lt;上海送签&gt;游签证</a></p>
+                        <p><span>9</span><a href="javascript:;">日本单次个人旅游签证&lt;上海送签&gt;游签证</a></p>
+                    </div>
+                </div>
+                <!--常见问题-->
+                <div class="visaProblem">
+                    <h2>常见问题</h2>
+                    <div class="ProblemList">
+                        <p><a href="javascript:;">签证是如何分类的</a></p>
+                        <p><a href="javascript:;">申办外国签证对护照有何要何要何申办外国</a></p>
+                        <p><a href="javascript:;">怎样提高申请签证通过率呢</a></p>
+                        <p><a href="javascript:;">签证的有效期和停留期之间之间之之之</a></p>
+                        <p><a href="javascript:;">如何选择签证代理</a></p>
+                    </div>
+                    <a href="javascript:;">更多问题&gt;&gt;</a>
+                </div>
+            </div>
+            <!--签证 右侧-->
+            <div id="visa_right" class="fr">
+                <!--地区选择-->
+                <div class="visaRegion">
+                    <div class="RegionHeader">
+                        <ul class="clearfix">
+                            <!--城市-->
+                            <li class="Region_city">
+                                <div class="cityEventShow">
+                                    <span class="curCity">上海</span>
+                                    <s class="Arrow"></s>
+                                </div>
+                                <!--城市 下拉列表-->
+                                <div class="cityEventHide">
+                                    <div class="hotTitle clearfix">
+                                        <a href="javascript:;" class="cityCur">热门城市</a>
+                                        <a href="javascript:;">ABCD</a>
+                                        <a href="javascript:;">EFGH</a>
+                                        <a href="javascript:;">JKL</a>
+                                        <a href="javascript:;">MNPQR</a>
+                                        <a href="javascript:;">STW</a>
+                                        <a href="javascript:;">XYZ</a>
+                                    </div>
+                                    <ul>
+                                        <li class="clearfix cityOn">
+                                            <a href="javascript:;">北京</a>
+                                            <a href="javascript:;" class="fontOrange">上海</a>
+                                            <a href="javascript:;">天津</a>
+                                            <a href="javascript:;">重庆</a>
+                                            <a href="javascript:;">青岛</a>
+                                            <a href="javascript:;">西安</a>
+                                            <a href="javascript:;">南京</a>
+                                            <a href="javascript:;">苏州</a>
+                                            <a href="javascript:;">杭州</a>
+                                            <a href="javascript:;">成都</a>
+                                            <a href="javascript:;">深圳</a>
+                                            <a href="javascript:;">三亚</a>
+                                            <a href="javascript:;">台北</a>
+                                            <a href="javascript:;">香港</a>
+                                            <a href="javascript:;">济南</a>
+                                            <a href="javascript:;">宁波</a>
+                                            <a href="javascript:;">厦门</a>
+                                            <a href="javascript:;">沈阳</a>
+                                            <a href="javascript:;">武汉</a>
+                                            <a href="javascript:;">大连</a>
+                                            <a href="javascript:;">广州</a>
+                                            <a href="javascript:;">贵阳</a>
+                                            <a href="javascript:;">南昌</a>
+                                            <a href="javascript:;">太原</a>
+                                            <a href="javascript:;">长沙</a>
+                                            <a href="javascript:;">兰州</a>
+                                            <a href="javascript:;">银川</a>
+                                            <a href="javascript:;">合肥</a>
+                                            <a href="javascript:;">乌鲁木齐</a>
+                                            <a href="javascript:;">连云港</a>
+                                            <a href="javascript:;">哈尔滨</a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="javascript:;">北京1</a>
+                                            <a href="javascript:;" class="fontOrange">上海</a>
+                                            <a href="javascript:;">天津</a>
+                                            <a href="javascript:;">重庆</a>
+                                            <a href="javascript:;">青岛</a>
+                                            <a href="javascript:;">西安</a>
+                                            <a href="javascript:;">南京</a>
+                                            <a href="javascript:;">苏州</a>
+                                            <a href="javascript:;">杭州</a>
+                                            <a href="javascript:;">成都</a>
+                                            <a href="javascript:;">深圳</a>
+                                            <a href="javascript:;">三亚</a>
+                                            <a href="javascript:;">台北</a>
+                                            <a href="javascript:;">香港</a>
+                                            <a href="javascript:;">济南</a>
+                                            <a href="javascript:;">宁波</a>
+                                            <a href="javascript:;">厦门</a>
+                                            <a href="javascript:;">沈阳</a>
+                                            <a href="javascript:;">武汉</a>
+                                            <a href="javascript:;">大连</a>
+                                            <a href="javascript:;">广州</a>
+                                            <a href="javascript:;">贵阳</a>
+                                            <a href="javascript:;">南昌</a>
+                                            <a href="javascript:;">太原</a>
+                                            <a href="javascript:;">长沙</a>
+                                            <a href="javascript:;">兰州</a>
+                                            <a href="javascript:;">银川</a>
+                                            <a href="javascript:;">合肥</a>
+                                            <a href="javascript:;">乌鲁木齐</a>
+                                            <a href="javascript:;">连云港</a>
+                                            <a href="javascript:;">哈尔滨</a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="javascript:;">北京2</a>
+                                            <a href="javascript:;" class="fontOrange">上海</a>
+                                            <a href="javascript:;">天津</a>
+                                            <a href="javascript:;">重庆</a>
+                                            <a href="javascript:;">青岛</a>
+                                            <a href="javascript:;">西安</a>
+                                            <a href="javascript:;">南京</a>
+                                            <a href="javascript:;">苏州</a>
+                                            <a href="javascript:;">杭州</a>
+                                            <a href="javascript:;">成都</a>
+                                            <a href="javascript:;">深圳</a>
+                                            <a href="javascript:;">三亚</a>
+                                            <a href="javascript:;">台北</a>
+                                            <a href="javascript:;">香港</a>
+                                            <a href="javascript:;">济南</a>
+                                            <a href="javascript:;">宁波</a>
+                                            <a href="javascript:;">厦门</a>
+                                            <a href="javascript:;">沈阳</a>
+                                            <a href="javascript:;">武汉</a>
+                                            <a href="javascript:;">大连</a>
+                                            <a href="javascript:;">广州</a>
+                                            <a href="javascript:;">贵阳</a>
+                                            <a href="javascript:;">南昌</a>
+                                            <a href="javascript:;">太原</a>
+                                            <a href="javascript:;">长沙</a>
+                                            <a href="javascript:;">兰州</a>
+                                            <a href="javascript:;">银川</a>
+                                            <a href="javascript:;">合肥</a>
+                                            <a href="javascript:;">乌鲁木齐</a>
+                                            <a href="javascript:;">连云港</a>
+                                            <a href="javascript:;">哈尔滨</a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="javascript:;">北京</a>
+                                            <a href="javascript:;" class="fontOrange">上海</a>
+                                            <a href="javascript:;">天津</a>
+                                            <a href="javascript:;">重庆</a>
+                                            <a href="javascript:;">青岛</a>
+                                            <a href="javascript:;">西安</a>
+                                            <a href="javascript:;">南京</a>
+                                            <a href="javascript:;">苏州</a>
+                                            <a href="javascript:;">杭州</a>
+                                            <a href="javascript:;">成都</a>
+                                            <a href="javascript:;">深圳</a>
+                                            <a href="javascript:;">三亚</a>
+                                            <a href="javascript:;">台北</a>
+                                            <a href="javascript:;">香港</a>
+                                            <a href="javascript:;">济南</a>
+                                            <a href="javascript:;">宁波</a>
+                                            <a href="javascript:;">厦门</a>
+                                            <a href="javascript:;">沈阳</a>
+                                            <a href="javascript:;">武汉</a>
+                                            <a href="javascript:;">大连</a>
+                                            <a href="javascript:;">广州</a>
+                                            <a href="javascript:;">贵阳</a>
+                                            <a href="javascript:;">南昌</a>
+                                            <a href="javascript:;">太原</a>
+                                            <a href="javascript:;">长沙</a>
+                                            <a href="javascript:;">兰州</a>
+                                            <a href="javascript:;">银川</a>
+                                            <a href="javascript:;">合肥</a>
+                                            <a href="javascript:;">乌鲁木齐</a>
+                                            <a href="javascript:;">连云港</a>
+                                            <a href="javascript:;">哈尔滨</a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="javascript:;">北京</a>
+                                            <a href="javascript:;" class="fontOrange">上海</a>
+                                            <a href="javascript:;">天津</a>
+                                            <a href="javascript:;">重庆</a>
+                                            <a href="javascript:;">青岛</a>
+                                            <a href="javascript:;">西安</a>
+                                            <a href="javascript:;">南京</a>
+                                            <a href="javascript:;">苏州</a>
+                                            <a href="javascript:;">杭州</a>
+                                            <a href="javascript:;">成都</a>
+                                            <a href="javascript:;">深圳</a>
+                                            <a href="javascript:;">三亚</a>
+                                            <a href="javascript:;">台北</a>
+                                            <a href="javascript:;">香港</a>
+                                            <a href="javascript:;">济南</a>
+                                            <a href="javascript:;">宁波</a>
+                                            <a href="javascript:;">厦门</a>
+                                            <a href="javascript:;">沈阳</a>
+                                            <a href="javascript:;">武汉</a>
+                                            <a href="javascript:;">大连</a>
+                                            <a href="javascript:;">广州</a>
+                                            <a href="javascript:;">贵阳</a>
+                                            <a href="javascript:;">南昌</a>
+                                            <a href="javascript:;">太原</a>
+                                            <a href="javascript:;">长沙</a>
+                                            <a href="javascript:;">兰州</a>
+                                            <a href="javascript:;">银川</a>
+                                            <a href="javascript:;">合肥</a>
+                                            <a href="javascript:;">乌鲁木齐</a>
+                                            <a href="javascript:;">连云港</a>
+                                            <a href="javascript:;">哈尔滨</a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="javascript:;">北京</a>
+                                            <a href="javascript:;" class="fontOrange">上海</a>
+                                            <a href="javascript:;">天津</a>
+                                            <a href="javascript:;">重庆</a>
+                                            <a href="javascript:;">青岛</a>
+                                            <a href="javascript:;">西安</a>
+                                            <a href="javascript:;">南京</a>
+                                            <a href="javascript:;">苏州</a>
+                                            <a href="javascript:;">杭州</a>
+                                            <a href="javascript:;">成都</a>
+                                            <a href="javascript:;">深圳</a>
+                                            <a href="javascript:;">三亚</a>
+                                            <a href="javascript:;">台北</a>
+                                            <a href="javascript:;">香港</a>
+                                            <a href="javascript:;">济南</a>
+                                            <a href="javascript:;">宁波</a>
+                                            <a href="javascript:;">厦门</a>
+                                            <a href="javascript:;">沈阳</a>
+                                            <a href="javascript:;">武汉</a>
+                                            <a href="javascript:;">大连</a>
+                                            <a href="javascript:;">广州</a>
+                                            <a href="javascript:;">贵阳</a>
+                                            <a href="javascript:;">南昌</a>
+                                            <a href="javascript:;">太原</a>
+                                            <a href="javascript:;">长沙</a>
+                                            <a href="javascript:;">兰州</a>
+                                            <a href="javascript:;">银川</a>
+                                            <a href="javascript:;">合肥</a>
+                                            <a href="javascript:;">乌鲁木齐</a>
+                                            <a href="javascript:;">连云港</a>
+                                            <a href="javascript:;">哈尔滨</a>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a href="javascript:;">北京</a>
+                                            <a href="javascript:;" class="fontOrange">上海</a>
+                                            <a href="javascript:;">天津</a>
+                                            <a href="javascript:;">重庆</a>
+                                            <a href="javascript:;">青岛</a>
+                                            <a href="javascript:;">西安</a>
+                                            <a href="javascript:;">南京</a>
+                                            <a href="javascript:;">苏州</a>
+                                            <a href="javascript:;">杭州</a>
+                                            <a href="javascript:;">成都</a>
+                                            <a href="javascript:;">深圳</a>
+                                            <a href="javascript:;">三亚</a>
+                                            <a href="javascript:;">台北</a>
+                                            <a href="javascript:;">香港</a>
+                                            <a href="javascript:;">济南</a>
+                                            <a href="javascript:;">宁波</a>
+                                            <a href="javascript:;">厦门</a>
+                                            <a href="javascript:;">沈阳</a>
+                                            <a href="javascript:;">武汉</a>
+                                            <a href="javascript:;">大连</a>
+                                            <a href="javascript:;">广州</a>
+                                            <a href="javascript:;">贵阳</a>
+                                            <a href="javascript:;">南昌</a>
+                                            <a href="javascript:;">太原</a>
+                                            <a href="javascript:;">长沙</a>
+                                            <a href="javascript:;">兰州</a>
+                                            <a href="javascript:;">银川</a>
+                                            <a href="javascript:;">合肥</a>
+                                            <a href="javascript:;">乌鲁木齐</a>
+                                            <a href="javascript:;">连云港</a>
+                                            <a href="javascript:;">哈尔滨</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--搜索-->
+                            <li class="Region_Select clearfix">
+                                <div class="SelectEventShow fl">
+                                    <span class="curSelect">全部</span>
+                                    <s class="Arrow"></s>
+                                    <div class="SelectEventHover">
+                                        <a href="javascript:;">旅游</a>
+                                        <a href="javascript:;">商务</a>
+                                        <a href="javascript:;">探亲</a>
+                                    </div>
+                                </div>
+                                <input type="text" placeholder="输入目的地、关键字"/>
+                                <input type="button" value="搜索"/>
+                            </li>
+                            <li class="visaGuodu">
+                                <a href="javascript:;">法国</a>
+                                <a href="javascript:;">日本</a>
+                                <a href="javascript:;">西班牙</a>
+                                <a href="javascript:;">埃塞俄比亚</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--地图-->
+                    <div id="visaMap">
+                        <span class="floatTxt TXTbmz">北美洲</span>
+                        <span class="floatTxt TXTnmz">南美洲</span>
+                        <span class="floatTxt TXToz">欧洲</span>
+                        <span class="floatTxt TXTfz">非洲</span>
+                        <span class="floatTxt TXTyz">亚洲</span>
+                        <span class="floatTxt TXTdyz">大洋洲</span>
+                        <div class="mapContent clearfix">
+                            <s class="bit"></s>
+                            <a href="javascript:;" class="fr"><img class="floatImg" /></a>
+                            <h3><span class="titZh"></span><span class="titEn"></span></h3>
+                            <p class="mapContentTxt clearfix"></p>
+                        </div>
+                    </div>
+                <!--轮播-->
+                <div class="visaSlider">
+                    <div class="SliderImg">
+                        <a href="javascript:;" class="on"><img src="images/visa_l1.jpg"/></a>
+                        <a href="javascript:;"><img src="images/visa_l1.jpg"/></a>
+                        <a href="javascript:;"><img src="images/visa_l1.jpg"/></a>
+                    </div>
+                    <span class="sliderNavBox"><a href="javascript:;" class="navCur"></a><a href="javascript:;"></a><a href="javascript:;"></a></span>
+                </div>
+                <!--热门签证-->
+                <div class="visa_hot">
+                    <p class="hot_tit clearfix"><a class="fr" href="javascript:;">查看更多&gt;&gt;</a>热门签证</p>
+                    <ul class="clearfix">
+                        <li>
+                            <img src="images/visa_country.jpg" />
+                            <a href="javascript:;">法国签证</a>
+                            <span class="visa_hotInstructions fl">单次个人旅游签证</span>
+                            <span class="fl visaPrice fontOrange">￥<span>299</span></span>
+                        </li>
+                        <li>
+                            <img src="images/visa_country.jpg" />
+                            <a href="javascript:;">法国签证</a>
+                            <span class="visa_hotInstructions fl">单次个人旅游签证</span>
+                            <span class="fl visaPrice fontOrange">￥<span>299</span></span>
+                        </li>
+                        <li>
+                            <img src="images/visa_country.jpg" />
+                            <a href="javascript:;">法国签证</a>
+                            <span class="visa_hotInstructions fl">单次个人旅游签证</span>
+                            <span class="fl visaPrice fontOrange">￥<span>299</span></span>
+                        </li>
+                        <li>
+                            <img src="images/visa_country.jpg" />
+                            <a href="javascript:;">法国签证</a>
+                            <span class="visa_hotInstructions fl">单次个人旅游签证</span>
+                            <span class="fl visaPrice fontOrange">￥<span>299</span></span>
+                        </li>
+                        <li>
+                            <img src="images/visa_country.jpg" />
+                            <a href="javascript:;">法国签证</a>
+                            <span class="visa_hotInstructions fl">单次个人旅游签证</span>
+                            <span class="fl visaPrice fontOrange">￥<span>299</span></span>
+                        </li>
+                        <li>
+                            <img src="images/visa_country.jpg" />
+                            <a href="javascript:;">法国签证</a>
+                            <span class="visa_hotInstructions fl">单次个人旅游签证</span>
+                            <span class="fl visaPrice fontOrange">￥<span>299</span></span>
+                        </li>
+                        <li>
+                            <img src="images/visa_country.jpg" />
+                            <a href="javascript:;">法国签证</a>
+                            <span class="visa_hotInstructions fl">单次个人旅游签证</span>
+                            <span class="fl visaPrice fontOrange">￥<span>299</span></span>
+                        </li>
+                        <li>
+                            <img src="images/visa_country.jpg" />
+                            <a href="javascript:;">法国签证</a>
+                            <span class="visa_hotInstructions fl">单次个人旅游签证</span>
+                            <span class="fl visaPrice fontOrange">￥<span>299</span></span>
+                        </li>
+                        <li>
+                            <img src="images/visa_country.jpg" />
+                            <a href="javascript:;">法国签证</a>
+                            <span class="visa_hotInstructions fl">单次个人旅游签证</span>
+                            <span class="fl visaPrice fontOrange">￥<span>299</span></span>
+                        </li>
+                    </ul>
+                </div>
+                <!--签证流程-->
+                <div class="visaProcess">
+                    <h2>签证流程</h2>
+                    <div class="visa_processCon"></div>
+                </div>
+                <!--热门免签目的地-->
+                <div class="hotDestination">
+                    <h2 class="clearfix"><a class="fr" href="javascript:;">查看更多&gt;&gt;</a>热门免签目的地</h2>
+                    <div class="hotImgs clearfix">
+                        <a href="javascript:;"><img src="images/visa_tj.jpg" /></a>
+                        <a href="javascript:;"><img src="images/visa_tj.jpg" /></a>
+                        <a href="javascript:;"><img src="images/visa_tj.jpg" /></a>
+                        <a href="javascript:;"><img src="images/visa_tj.jpg" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--签证 底部用户点评-->
+        <div id="comment">
+            <h2>用户点评</h2>
+            <ul class="clearfix">
+                <li>
+                    <h3><a href="javascript:;">泰国个人旅游签证&lt;上海送签是&gt;</a></h3>
+                    <p class="visaTalkabout">出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠靠靠</p>
+                    <p class="visaUserInfo clearfix"><span class="visaDate fr">2016-01-11</span><span class="visaHideNum">13800001111</span></p>
+                </li>
+                <li>
+                    <h3><a href="javascript:;">泰国个人旅游签证&lt;上海送签是&gt;</a></h3>
+                    <p class="visaTalkabout">出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠靠靠</p>
+                    <p class="visaUserInfo clearfix"><span class="visaDate fr">2016-01-11</span><span class="visaHideNum">13800801111</span></p>
+                </li>
+                <li>
+                    <h3><a href="javascript:;">泰国个人旅游签证&lt;上海送签是&gt;</a></h3>
+                    <p class="visaTalkabout">出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠谱出签速度快，比较靠靠靠</p>
+                    <p class="visaUserInfo clearfix"><span class="visaDate fr">2016-01-11</span><span class="visaHideNum">13800031111</span></p>
+                </li>
+                <li>
+                    <h3><a href="javascript:;">泰国个人旅游签证&lt;上海送签是&gt;</a></h3>
+                    <p class="visaTalkabout">出签速度快，比较靠谱出签速度快</p>
+                    <p class="visaUserInfo clearfix"><span class="visaDate fr">2016-01-11</span><span class="visaHideNum">13802001111</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
