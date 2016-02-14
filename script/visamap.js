@@ -72,7 +72,7 @@
             success:function(val){
                 var vl=val.info[i],
                     Country=vl.Country.length;
-                for(var j= 0, len=Country; j<len; j++){
+                for(var j= 0; j<Country; j++){
                     $mapContentTxt.append('<a href="'+vl.links[j]+'">'+vl.Country[j]+'</a>')
                 }
                 $titZh.text(vl.tits);
