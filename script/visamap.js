@@ -64,7 +64,7 @@
 });
 
     //获取信息
-    function GetInfo(i,x,y){
+    function GetInfo(i,pos){
         $.ajax({
             url:'mapinfo.txt',
             dataType : 'json',
@@ -83,35 +83,29 @@
                 //console.log('服务器异常 '+XMLHttpRequest.status);
             }
         });
-        if ($floatTxt.eq(i).position().left==x[i]){
-            $mapContent.animate({left:x[i]+20,top:y[i]-190}).show()
+        var posX=pos[i].x,posY=pos[i].y;
+        if ($floatTxt.eq(i).position().left==posX){
+            $mapContent.css({left:posX+20,top:posY-190}).show()
         }
     }
-    //获得区域坐标X
-    function getPosX(){
+    //获得区域坐标
+    var getPos=function(){
        var arry=[];
         for(var i= 0, len=$floatTxt.length; i<len; i++){
-            var x=$floatTxt.eq(i).position().left;
-            arry.push(x)
+            var iX=$floatTxt.eq(i).position().left,
+                iY=$floatTxt.eq(i).position().top,
+                pos={'x':iX,'y':iY};
+            arry.push(pos)
         }
         return arry;
-    }
-    //获得区域坐标Y
-    function getPosY(){
-        var arry=[];
-        for(var i= 0, len=$floatTxt.length; i<len; i++){
-            var y=$floatTxt.eq(i).position().top;
-            arry.push(y)
-        }
-        return arry;
-    }
+    };
     //区域鼠标事件
     $('[data-code="id0"],[data-code="id1"],[data-code="id2"],[data-code="id3"],[data-code="id4"],[data-code="id5"]').on('mouseenter mouseleave',function(e){
         if(e.type=='mouseenter'){
             $mapContent.stop();
             clearTimeout(oTime);
             var nzindex=$(this).index();
-            GetInfo.call($(this),nzindex,getPosX(),getPosY())
+            GetInfo.call($(this),nzindex,getPos())
         }else{
             oTime=setTimeout(function(){
                 $mapContentTxt.find('a').remove();
